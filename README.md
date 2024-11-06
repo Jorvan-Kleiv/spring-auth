@@ -17,5 +17,5 @@ Suivez les étapes ci-dessous pour configurer le projet en local.
 
 1. **Clone the repository :**
    ```bash
-   git clone https://github.com/Jorvan-Kleiv/nom-du-projet.git
-   cd kleiv
+   git clone https://github.com/Jorvan-Kleiv/spring-auth.git
+   cd spring-auth
