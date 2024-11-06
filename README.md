@@ -1,10 +1,10 @@
-# NomDuProjet
+# 2fa and jwt authentication
 
-Description du projet en une ou deux lignes. Expliquez brièvement l'objectif de l'application.
+This project allows you to implement spring security using two-factor authentication
 
-## Prérequis
+## Prerequisites
 
-Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
+Before you begin, make sure you have the following installed:
 
 - [Java 17+](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [Maven 3.8+](https://maven.apache.org/download.cgi)
@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 Suivez les étapes ci-dessous pour configurer le projet en local.
 
-1. **Clonez le dépôt :**
+1. **Clone the repository :**
    ```bash
    git clone https://github.com/Jorvan-Kleiv/nom-du-projet.git
-   cd nom-du-projet
+   cd kleiv
