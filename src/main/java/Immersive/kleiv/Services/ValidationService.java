@@ -16,6 +16,7 @@ import static java.time.temporal.ChronoUnit.MINUTES;
 @RequiredArgsConstructor
 public class ValidationService {
     private final ValidationRepository validationRepository;
+    private final NotificationService notificationService;
 
     public void generateCode(User user) {
         Validation validation = new Validation();
@@ -26,7 +27,8 @@ public class ValidationService {
         Instant createdAt = Instant.now();
         validation.setCreatedAt(createdAt);
         validation.setXpiredAt(createdAt.plus(15, MINUTES));
-        this.validationRepository.save(validation);
+        Validation newValidation = this.validationRepository.save(validation);
+        this.notificationService.sendNotification(newValidation);
     }
 
     public Validation getValidationByCode(String code) {
